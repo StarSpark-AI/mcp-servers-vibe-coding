@@ -1,5 +1,18 @@
 # Workshop Outline
 
+## Part 0: Environment Setup
+
+1. Google Cloud CLI
+2. Conda
+3. Python 3.11
+4. PostgreSQL
+5. Django
+6. Node.js
+7. React
+8. Claude Code CLI
+9. Warp (terminal)
+10. Cursor (code editor)
+
 ## Part 1: Foundations (55 mins)
 
 ### Vibe Coding Recap + Document Driven Development (~30 mins)
