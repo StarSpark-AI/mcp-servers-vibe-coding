@@ -6,3 +6,7 @@ services:
     tty: true
     volumes:
       - ./:/home/workshop/setup-instructions/
+    ports:
+      - "4000:3000"   # create-react-app
+      - "6173:5173"   # Vite
+      - "10000:8000"  # Django

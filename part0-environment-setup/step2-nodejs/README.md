@@ -46,16 +46,16 @@ nvm alias default 20
 # Check Node.js version (should be 20.x)
 node --version
 
-# Check npm version
+# Check npm version (should be 10.x)
 npm --version
 
 # Test Node.js
-node -e "console.log('Node.js is working!')"
+node -e "console.log('Node.js is working')"
 ```
 
 ## Global Packages
 
 ```bash
-# Update npm to latest
+# Update npm to latest, requires `sudo` on *nix systems
 npm install -g npm@latest
 ```
