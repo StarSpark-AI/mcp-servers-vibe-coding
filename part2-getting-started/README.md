@@ -8,5 +8,9 @@
 
 ## Tour of Useful MCP Servers (~20 mins)
 
-- PostGres, GitHub, Browser, Documentation, Postman MCPs
-- Real-world integration examples
+
+| MCP server | Description | Guide |
+| --- | --- | --- |
+| Playwright Vision | Gives Codex/Claude a Playwright-driven browser for navigation, extraction, and screenshots. | [Playwright guide](mcp-playwright-vision/README.md) |
+| PostgreSQL (`@modelcontextprotocol/server-postgres`) | Provides read-only SQL access to the `mcp_workshop` database for data-aware prompts. | [Postgres guide](mcp-postgres/README.md) |
+```
