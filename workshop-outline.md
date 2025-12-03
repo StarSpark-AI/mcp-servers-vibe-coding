@@ -1,5 +1,11 @@
 # Workshop Outline
 
+## Part 0: Environment Setup
+
+- Prerequisites (Python 3.10+, Node.js 18+, Claude Code CLI)
+- Development environment configuration
+- Verification steps
+
 ## Part 1: Foundations (55 mins)
 
 ### Vibe Coding Recap + Document Driven Development (~30 mins)
