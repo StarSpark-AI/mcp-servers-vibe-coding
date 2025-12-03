@@ -1,4 +1,4 @@
-# Step 1: Google Cloud CLI
+# Step 8: Google Cloud CLI
 
 ## Overview
 

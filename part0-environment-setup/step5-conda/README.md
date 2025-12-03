@@ -1,4 +1,4 @@
-# Step 2: Conda
+# Step 5: Conda
 
 ## Overview
 
@@ -39,7 +39,7 @@ conda update conda
 ## Create Workshop Environment
 
 ```bash
-# Create a new environment for this workshop
+# Create a new environment for this workshop with Python 3.11
 conda create -n mcp-workshop python=3.11
 
 # Activate the environment
@@ -54,3 +54,7 @@ conda env list
 ```
 
 You should see the `mcp-workshop` environment in the list.
+
+## Next Steps
+
+Continue to Step 6 (Python) and Step 7 (Django) to complete your Python environment setup.

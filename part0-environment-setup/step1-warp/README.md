@@ -1,4 +1,4 @@
-# Step 9: Warp Terminal
+# Step 1: Warp Terminal
 
 ## Overview
 

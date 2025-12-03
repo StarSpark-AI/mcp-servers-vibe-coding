@@ -1,12 +1,12 @@
-# Step 3: Python 3.11
+# Step 6: Python 3.11 (in Conda Environment)
 
 ## Overview
 
-Python 3.11 is required for this workshop. We'll use the version installed via Conda.
+Python 3.11 is required for this workshop. We use the version installed via Conda.
 
 ## Installation
 
-If you followed Step 2, Python 3.11 is already installed in your Conda environment.
+Python 3.11 was installed when you created the Conda environment in Step 5.
 
 ```bash
 # Activate the workshop environment
@@ -19,16 +19,25 @@ python --version
 ## Additional Python Tools
 
 ```bash
+# Make sure environment is activated
+conda activate mcp-workshop
+
 # Upgrade pip
 pip install --upgrade pip
 
 # Install common development tools
 pip install ipython
+
+# Install PostgreSQL driver
+pip install psycopg2-binary
 ```
 
 ## Verification
 
 ```bash
+# Activate environment first
+conda activate mcp-workshop
+
 # Check Python version (should show 3.11.x)
 python --version
 
@@ -42,6 +51,7 @@ python -c "print('Python is working!')"
 ## Troubleshooting
 
 If `python` points to a different version:
+
 ```bash
 # Make sure conda environment is activated
 conda activate mcp-workshop
@@ -49,3 +59,6 @@ conda activate mcp-workshop
 # Check which python is being used
 which python
 ```
+
+The path should point to your Conda environment, e.g.:
+`/Users/YOUR_USER/miniconda3/envs/mcp-workshop/bin/python`

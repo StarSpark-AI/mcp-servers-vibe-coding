@@ -1,4 +1,4 @@
-# Step 6: Node.js
+# Step 9: Node.js
 
 ## Overview
 
@@ -59,4 +59,12 @@ node -e "console.log('Node.js is working!')"
 # Install useful global packages
 npm install -g npm@latest
 npm install -g npx
+```
+
+## Note
+
+With Node.js installed, you can now properly install Claude Code CLI globally:
+
+```bash
+npm install -g @anthropic-ai/claude-code
 ```

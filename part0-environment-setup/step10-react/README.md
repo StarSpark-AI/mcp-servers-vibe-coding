@@ -1,4 +1,4 @@
-# Step 7: React
+# Step 10: React
 
 ## Overview
 
@@ -51,7 +51,7 @@ npx --version
 npx create-react-app --version
 ```
 
-## Recommended VS Code Extensions
+## Recommended Cursor Extensions
 
 - ES7+ React/Redux/React-Native snippets
 - Prettier - Code formatter

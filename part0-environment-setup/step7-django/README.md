@@ -1,4 +1,4 @@
-# Step 5: Django
+# Step 7: Django (in Conda Environment)
 
 ## Overview
 
@@ -16,22 +16,6 @@ pip install django
 # Install Django REST framework (for API development)
 pip install djangorestframework
 ```
-
-## Verification
-
-```bash
-# Check Django version
-python -m django --version
-
-# Create a test project to verify installation
-django-admin startproject test_project
-cd test_project
-python manage.py check
-cd ..
-rm -rf test_project
-```
-
-You should see "System check identified no issues."
 
 ## Additional Django Packages
 
@@ -58,3 +42,22 @@ DATABASES = {
     }
 }
 ```
+
+## Verification
+
+```bash
+# Make sure environment is activated
+conda activate mcp-workshop
+
+# Check Django version
+python -m django --version
+
+# Create a test project to verify installation
+django-admin startproject test_project
+cd test_project
+python manage.py check
+cd ..
+rm -rf test_project
+```
+
+You should see "System check identified no issues."

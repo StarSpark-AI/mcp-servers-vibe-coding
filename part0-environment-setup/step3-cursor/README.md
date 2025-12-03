@@ -1,4 +1,4 @@
-# Step 10: Cursor
+# Step 3: Cursor
 
 ## Overview
 

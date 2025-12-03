@@ -44,16 +44,6 @@ createuser -s YOUR_USERNAME
 createdb mcp_workshop
 ```
 
-## Python Driver
-
-```bash
-# Make sure conda environment is activated
-conda activate mcp-workshop
-
-# Install psycopg2
-pip install psycopg2-binary
-```
-
 ## Verification
 
 ```bash
