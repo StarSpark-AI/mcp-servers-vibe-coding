@@ -2,9 +2,14 @@
 
 ## Part 0: Environment Setup
 
-- Prerequisites (Python 3.10+, Node.js 18+, Claude Code CLI)
-- Development environment configuration
-- Verification steps
+1. Google Cloud CLI
+2. Conda
+3. Python 3.11
+4. PostgreSQL
+5. Django
+6. Node.js
+7. React
+8. Claude Code CLI
 
 ## Part 1: Foundations (55 mins)
 
