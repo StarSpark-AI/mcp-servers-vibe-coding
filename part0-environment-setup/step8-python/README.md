@@ -1,4 +1,4 @@
-# Step 6: Python 3.11 (in Conda Environment)
+# Step 8: Python 3.11 (in Conda Environment)
 
 ## Overview
 
@@ -6,7 +6,7 @@ Python 3.11 is required for this workshop. We use the version installed via Cond
 
 ## Installation
 
-Python 3.11 was installed when you created the Conda environment in Step 5.
+Python 3.11 was installed when you created the Conda environment in Step 7.
 
 ```bash
 # Activate the workshop environment

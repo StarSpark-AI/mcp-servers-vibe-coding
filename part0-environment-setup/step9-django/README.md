@@ -1,4 +1,4 @@
-# Step 7: Django (in Conda Environment)
+# Step 9: Django (in Conda Environment)
 
 ## Overview
 

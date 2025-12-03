@@ -1,8 +1,8 @@
-# Step 9: Node.js
+# Step 2: Node.js
 
 ## Overview
 
-Node.js is a JavaScript runtime required for React development and some MCP tools.
+Node.js is a JavaScript runtime required for React development, Claude Code CLI, and other tools.
 
 ## Installation
 
@@ -56,15 +56,6 @@ node -e "console.log('Node.js is working!')"
 ## Global Packages
 
 ```bash
-# Install useful global packages
+# Update npm to latest
 npm install -g npm@latest
-npm install -g npx
-```
-
-## Note
-
-With Node.js installed, you can now properly install Claude Code CLI globally:
-
-```bash
-npm install -g @anthropic-ai/claude-code
 ```

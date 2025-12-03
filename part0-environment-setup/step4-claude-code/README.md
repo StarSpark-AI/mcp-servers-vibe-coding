@@ -1,17 +1,17 @@
-# Step 2: Claude Code CLI
+# Step 4: Claude Code CLI
 
 ## Overview
 
 Claude Code is Anthropic's official CLI for AI-assisted development.
 
+## Prerequisites
+
+Node.js and npm must be installed (Step 2).
+
 ## Installation
 
 ```bash
-# Install via npm (Node.js required - will be installed in Step 9)
-# For now, use npx to run without global install
-npx @anthropic-ai/claude-code
-
-# Or install globally if Node.js is already available
+# Install globally via npm
 npm install -g @anthropic-ai/claude-code
 ```
 

@@ -1,4 +1,4 @@
-# Step 4: PostgreSQL
+# Step 6: PostgreSQL
 
 ## Overview
 

@@ -1,4 +1,4 @@
-# Step 10: React
+# Step 3: React
 
 ## Overview
 

@@ -1,4 +1,4 @@
-# Step 5: Conda
+# Step 7: Conda
 
 ## Overview
 
@@ -57,4 +57,4 @@ You should see the `mcp-workshop` environment in the list.
 
 ## Next Steps
 
-Continue to Step 6 (Python) and Step 7 (Django) to complete your Python environment setup.
+Continue to Step 8 (Python) and Step 9 (Django) to complete your Python environment setup.
