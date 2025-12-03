@@ -1,0 +1,8 @@
+services:
+  workshop-setup:
+    build: .
+    container_name: mcp-workshop-setup
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./:/home/workshop/setup-instructions/

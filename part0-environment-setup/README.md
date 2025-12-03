@@ -55,6 +55,27 @@ python -m django --version
 gcloud --version
 ```
 
+## Testing with Docker (Linux)
+
+To test the setup instructions in a Linux environment:
+
+```bash
+cd part0-environment-setup
+
+# Build and run the container
+docker compose up -d
+
+# Enter the container
+docker compose exec workshop-setup bash
+
+# You're now in a Linux environment - follow the setup steps!
+# Instructions are in ~/setup-instructions/
+
+# When done, exit and clean up
+exit
+docker compose down
+```
+
 ## Troubleshooting
 
 If you encounter issues with any step, refer to the detailed README in each step folder.

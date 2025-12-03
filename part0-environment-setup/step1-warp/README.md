@@ -17,13 +17,20 @@ Or download directly from: https://www.warp.dev/
 
 ### Linux
 
-Download the `.deb` or `.rpm` package from: https://www.warp.dev/
-
 ```bash
-# Ubuntu/Debian
+# Ubuntu/Debian (x86_64)
+wget https://releases.warp.dev/stable/v0.2024.11.12.08.02.stable_03/warp-terminal_0.2024.11.12.08.02.stable.03_amd64.deb
 sudo dpkg -i warp-terminal_*.deb
 
+# If there are missing dependencies
+sudo apt-get install -f
+```
+
+For latest version, check: https://www.warp.dev/download
+
+```bash
 # Fedora/RHEL
+# Download from https://www.warp.dev/download
 sudo rpm -i warp-terminal_*.rpm
 ```
 
