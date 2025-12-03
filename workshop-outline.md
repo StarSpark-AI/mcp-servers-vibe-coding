@@ -10,6 +10,8 @@
 6. Node.js
 7. React
 8. Claude Code CLI
+9. Warp (terminal)
+10. Cursor (code editor)
 
 ## Part 1: Foundations (55 mins)
 

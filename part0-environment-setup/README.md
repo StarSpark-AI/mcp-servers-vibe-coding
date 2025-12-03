@@ -20,6 +20,8 @@ Complete these setup steps in order before the workshop.
 | 6 | [Node.js](step6-nodejs/) | JavaScript runtime |
 | 7 | [React](step7-react/) | Frontend framework |
 | 8 | [Claude Code CLI](step8-claude-code/) | AI-assisted development |
+| 9 | [Warp](step9-warp/) | Modern AI-powered terminal |
+| 10 | [Cursor](step10-cursor/) | AI-powered code editor |
 
 ## Quick Verification
 
@@ -47,6 +49,9 @@ npx --version
 
 # Claude Code
 claude --version
+
+# Warp - just launch and verify it opens
+# Cursor - just launch and verify it opens
 ```
 
 ## Troubleshooting
