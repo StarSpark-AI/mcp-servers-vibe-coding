@@ -25,7 +25,4 @@ RUN useradd -m -s /bin/bash workshop && \
 USER workshop
 WORKDIR /home/workshop
 
-# Copy setup instructions into container
-COPY --chown=workshop:workshop . /home/workshop/setup-instructions/
-
 CMD ["/bin/bash"]
