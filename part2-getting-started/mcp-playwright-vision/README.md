@@ -14,8 +14,10 @@ Playwright Vision (https://github.com/davidkim9/playwright-vision-mcp) gives Cod
 npm install -g playwright-vision-mcp
 # Verify binaries are on PATH
 playwright-vision-mcp --help
+
+# Ensure browsers and system libraries are installed
+npx playwright install --with-deps
 ```
-> Post-install hooks download Playwright browsers. If you skipped them or see "Executable doesn't exist" errors, run `npx playwright install --with-deps`.
 
 ## Environment Configuration
 | Variable | Purpose | Default |
@@ -35,6 +37,7 @@ claude mcp add playwright-vision \
   -- npx -y playwright-vision-mcp
 ```
 Check `claude mcp list`, then grant the new tools when Claude prompts for approvals.
+> Tip: when running inside containers or WSL where no GUI is available, set `-e PLAYWRIGHT_HEADLESS=true` to avoid display errors.
 
 ## Add to Codex CLI
 Codex supports STDIO MCP servers via `codex mcp add` (see https://developers.openai.com/codex/mcp).
@@ -46,6 +49,7 @@ codex mcp add playwright-vision \
   -- npx -y playwright-vision-mcp
 ```
 Run `codex mcp list` to confirm registration. You can further tweak `~/.codex/config.toml` if you need per-project overrides.
+> Containers/WSL users: switch to `--env PLAYWRIGHT_HEADLESS=true` to prevent Playwright from looking for a display server.
 
 ## Verification Prompt
 1. Launch `claude` (or `codex`) inside your repo.
