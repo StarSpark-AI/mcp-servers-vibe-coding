@@ -79,7 +79,7 @@ VALUES ('MCP Workshop', 'Review MCP docs', 'in_progress'),
 	   ('MCP Workshop', 'Add Codex server', 'todo')
 ON CONFLICT DO NOTHING;
 SELECT * FROM workshop_tasks;
-
+SQL
 ```
 
 ## Optional: pgAdmin
