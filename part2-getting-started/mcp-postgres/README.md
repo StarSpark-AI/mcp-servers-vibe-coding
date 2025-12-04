@@ -13,9 +13,11 @@ This MCP server exposes read-only SQL access so Codex or Claude can inspect sche
 ## Installation
 ```bash
 npm install -g @modelcontextprotocol/server-postgres
-# Optional sanity check
-mcp-server-postgres --help
+# Optional sanity check (requires a real connection string)
+mcp-server-postgres "postgresql://your_username:YOUR_STRONG_PASSWORD@localhost:5432/mcp_workshop" --help
 ```
+> The binary expects the database URL as its first argument. Running `mcp-server-postgres --help` with no URL raises the `ERR_INVALID_URL` error shown above. Always pass your connection string before any flags.
+
 The binary is read-only, but always point it at non-production data.
 
 ## Connection String
