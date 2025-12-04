@@ -6,19 +6,31 @@ Conda is a package and environment manager that simplifies Python dependency man
 
 ## Installation
 
-### macOS / Linux
+### macOS
 
 ```bash
-# Download Miniconda installer
-curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh  # Apple Silicon
-# OR
-curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh  # Intel Mac
-# OR
-curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh  # Linux
+# Apple Silicon
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
+
+# Intel Mac
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
 
 # Run installer
 bash Miniconda3-latest-*.sh
+# Follow prompts and restart terminal
+```
 
+### Linux
+
+```bash
+# Linux x86_64
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+
+# Linux ARM64 (e.g., Docker on Apple Silicon)
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
+
+# Run installer
+bash Miniconda3-latest-*.sh
 # Follow prompts and restart terminal
 ```
 

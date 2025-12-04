@@ -2,16 +2,16 @@
 
 ## Part 0: Environment Setup
 
-1. Google Cloud CLI
-2. Conda
-3. Python 3.11
-4. PostgreSQL
-5. Django
-6. Node.js
-7. React
-8. Claude Code CLI
-9. Warp (terminal)
-10. Cursor (code editor)
+1. Warp (terminal)
+2. Node.js
+3. React
+4. Claude Code CLI
+5. Cursor (code editor)
+6. PostgreSQL
+7. Conda
+8. Python 3.11 (in Conda environment)
+9. Django (in Conda environment)
+10. Google Cloud CLI
 
 ## Part 1: Foundations (55 mins)
 

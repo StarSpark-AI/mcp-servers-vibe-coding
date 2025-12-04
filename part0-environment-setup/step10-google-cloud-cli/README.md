@@ -4,6 +4,19 @@
 
 Google Cloud CLI (gcloud) provides command-line access to Google Cloud services.
 
+## Prerequisites
+
+You need a Google Cloud account. If you don't have one:
+
+1. Visit https://cloud.google.com/
+2. Click "Get started for free"
+3. Sign in with your Google account
+4. New accounts get **$300 in free credits** valid for 90 days
+
+> **Note:** A credit card is required for verification, but you won't be charged until you manually upgrade to a paid account.
+
+For more details, see [Google Cloud Free Program](https://cloud.google.com/free).
+
 ## Installation
 
 ### macOS
@@ -42,6 +55,16 @@ gcloud auth login
 # Set your default project
 gcloud config set project YOUR_PROJECT_ID
 ```
+
+### Browser-less Authentication (Docker/Remote Servers)
+
+If you're on a machine without a browser (e.g., Docker, SSH):
+
+1. Run `gcloud auth login --no-browser`
+2. A URL will be printed - copy and paste it into a browser on another machine
+3. Complete the authentication in the browser
+4. A verification code will be displayed - copy it
+5. Paste the code back into the terminal
 
 ## Verification
 

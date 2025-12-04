@@ -17,15 +17,9 @@ Or download directly from: https://www.warp.dev/
 
 ### Linux
 
-Download the `.deb` or `.rpm` package from: https://www.warp.dev/
+Download from: https://www.warp.dev/download
 
-```bash
-# Ubuntu/Debian
-sudo dpkg -i warp-terminal_*.deb
-
-# Fedora/RHEL
-sudo rpm -i warp-terminal_*.rpm
-```
+Packages available for Ubuntu/Debian (.deb), Fedora/RHEL (.rpm), and AppImage.
 
 ### Windows
 
@@ -60,3 +54,5 @@ echo "Warp is working!"
 ```
 
 You should see the output organized in a block.
+
+> **Note:** Warp is a GUI application and requires a display server. It cannot be tested in Docker containers.
