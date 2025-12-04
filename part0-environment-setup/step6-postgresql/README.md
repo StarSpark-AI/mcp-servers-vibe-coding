@@ -82,6 +82,45 @@ SELECT * FROM workshop_tasks;
 
 ```
 
+## Optional: pgAdmin
+
+pgAdmin is a GUI tool for managing PostgreSQL databases.
+
+### macOS
+
+```bash
+brew install --cask pgadmin4
+```
+
+### Windows
+
+Included with the PostgreSQL installer, or download from: https://www.pgadmin.org/download/
+
+### Linux
+
+```bash
+# Add pgAdmin repository
+curl -fsS https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo gpg --dearmor -o /usr/share/keyrings/pgadmin.gpg
+echo "deb [signed-by=/usr/share/keyrings/pgadmin.gpg] https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" | sudo tee /etc/apt/sources.list.d/pgadmin4.list
+
+# Install
+sudo apt update
+sudo apt install pgadmin4-desktop
+```
+
+### Setup
+
+1. Launch pgAdmin
+2. Right-click "Servers" → "Register" → "Server"
+3. Name: `mcp_workshop`
+4. Connection tab:
+   - Host: `localhost`
+   - Port: `5432`
+   - Username: your PostgreSQL username
+   - Password: your PostgreSQL password
+
+---
+
 ## Troubleshooting
 
 ### Password authentication failed (macOS)
