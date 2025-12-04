@@ -50,7 +50,7 @@ node --version
 npm --version
 
 # Test Node.js
-node -e "console.log('Node.js is working')"
+node -e "console.log('Node.js is working!')"
 ```
 
 ## Global Packages
