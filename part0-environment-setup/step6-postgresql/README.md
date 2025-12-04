@@ -29,19 +29,30 @@ Download and run the installer from: https://www.postgresql.org/download/windows
 sudo apt update
 sudo apt install postgresql postgresql-contrib
 
-# Start PostgreSQL service
+# Start PostgreSQL service (systemd hosts)
 sudo systemctl start postgresql
 sudo systemctl enable postgresql
+
+# If systemctl is unavailable (WSL2/containers)
+sudo service postgresql start
 ```
 
 ## Configuration
 
 ```bash
-# Create a database user (replace YOUR_USERNAME)
-createuser -s YOUR_USERNAME
+# Open a psql shell as the postgres superuser
+#   Linux:  sudo -u postgres psql
+#   macOS:  psql postgres
+#   Windows: run "psql -U postgres"
 
-# Create a database for the workshop
-createdb mcp_workshop
+# Inside psql, replace placeholders and run:
+CREATE ROLE your_username WITH LOGIN PASSWORD 'YOUR_STRONG_PASSWORD';
+CREATE DATABASE mcp_workshop OWNER your_username;
+GRANT CONNECT ON DATABASE mcp_workshop TO your_username;
+GRANT ALL PRIVILEGES ON DATABASE mcp_workshop TO your_username;
+\q
+
+> **Important:** Swap `your_username` / `YOUR_STRONG_PASSWORD` for real values before running the statements. PostgreSQL will happily create a user literally named `your_username` if you skip this step.
 ```
 
 ## Verification
@@ -50,8 +61,22 @@ createdb mcp_workshop
 # Check PostgreSQL version
 psql --version
 
-# Connect to the database
-psql -d mcp_workshop -c "SELECT version();"
-```
+# Connect using the workshop credentials (replace placeholders)
+PGPASSWORD=YOUR_STRONG_PASSWORD \
+psql -U your_username -d mcp_workshop -h localhost \
+	 -c "SELECT current_user, current_database();"
 
-You should see the PostgreSQL version information.
+# Create a test table and seed sample rows
+PGPASSWORD=YOUR_STRONG_PASSWORD psql -U your_username -d mcp_workshop -h localhost <<'SQL'
+CREATE TABLE IF NOT EXISTS workshop_tasks (
+	id SERIAL PRIMARY KEY,
+	title TEXT NOT NULL,
+	status TEXT NOT NULL
+);
+INSERT INTO workshop_tasks (title, status)
+VALUES ('Review MCP docs', 'in_progress'),
+	   ('Add Codex server', 'todo')
+ON CONFLICT DO NOTHING;
+SELECT * FROM workshop_tasks;
+SQL
+```
