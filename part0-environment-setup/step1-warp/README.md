@@ -19,7 +19,30 @@ Or download directly from: https://www.warp.dev/
 
 Download from: https://www.warp.dev/download
 
-Packages available for Ubuntu/Debian (.deb), Fedora/RHEL (.rpm), and AppImage.
+Packages available for Ubuntu/Debian (.deb), Fedora/RHEL (.rpm), and AppImage. Use your distro's package manager so dependencies are resolved automatically.
+
+#### Ubuntu / Debian (.deb)
+```bash
+wget https://app.warp.dev/download?package=deb -O warp-terminal.deb
+sudo apt update
+sudo apt install ./warp-terminal.deb  # apt pulls any missing dependencies
+```
+
+#### Fedora / RHEL (.rpm)
+```bash
+wget https://app.warp.dev/download?package=rpm -O warp-terminal.rpm
+sudo dnf install ./warp-terminal.rpm   # use `sudo yum localinstall` on older RHEL
+```
+
+#### AppImage
+If your distro isn't covered by the packages above, grab the AppImage:
+```bash
+wget https://app.warp.dev/download?package=appimage -O warp-terminal.AppImage
+chmod +x warp-terminal.AppImage
+./warp-terminal.AppImage &
+```
+Create a desktop entry if you want it to appear in your launcher.
+
 
 ### Windows
 
