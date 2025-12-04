@@ -6,7 +6,8 @@ Claude Code is Anthropic's official CLI for AI-assisted development.
 
 ## Prerequisites
 
-Node.js and npm must be installed (Step 2).
+- Node.js and npm must be installed (Step 2)
+- **Claude Pro subscription (minimum)** - Required for this workshop
 
 ## Installation
 
@@ -15,23 +16,17 @@ Node.js and npm must be installed (Step 2).
 npm install -g @anthropic-ai/claude-code
 ```
 
-## Configuration
+## Login with Claude Subscription
 
 ```bash
-# Launch Claude Code (will prompt for API key on first run)
+# Launch Claude Code
 claude
 
-# Or set API key via environment variable
-export ANTHROPIC_API_KEY=your_api_key_here
+# Select "Login with Claude subscription" when prompted
+# This will open a browser window to authenticate
 ```
 
-## API Key Setup
-
-1. Visit https://console.anthropic.com/
-2. Create an account or sign in
-3. Navigate to API Keys
-4. Create a new API key
-5. Copy the key and use it when prompted
+Follow the browser prompts to log in with your Claude account. You must have an active Claude Pro (or higher) subscription.
 
 ## Verification
 
@@ -61,4 +56,48 @@ Claude Code supports MCP servers. To add an MCP server:
 claude mcp add <server-name> <command>
 ```
 
-This will be covered in detail during the workshop.
+See [Part 2: Getting Started](../../part2-getting-started/) for detailed MCP server setup.
+
+## Frontend Design Plugin
+
+The frontend-design plugin helps Claude Code create distinctive, production-grade UI components that avoid generic "AI aesthetics".
+
+### Installation
+
+Within Claude Code, run:
+
+```
+/plugin marketplace add anthropics/claude-code
+/plugin install frontend-design@claude-code-plugins
+```
+
+### Usage
+
+Once installed, Claude automatically uses this skill for frontend work. Try prompts like:
+
+- "Create a dashboard for a music streaming app"
+- "Build a landing page for an AI startup"
+- "Design a settings panel with dark mode"
+
+For more details, see the [official plugin documentation](https://github.com/anthropics/claude-code/tree/main/plugins/frontend-design).
+
+---
+
+## Optional: API Key Setup
+
+If you prefer to use an API key instead of your subscription:
+
+```bash
+# Set API key via environment variable
+export ANTHROPIC_API_KEY=your_api_key_here
+
+# Or Claude Code will prompt for it on first run
+claude
+```
+
+To get an API key:
+1. Visit https://console.anthropic.com/
+2. Create an account or sign in
+3. Navigate to API Keys
+4. Create a new API key
+5. Copy the key and use it when prompted
