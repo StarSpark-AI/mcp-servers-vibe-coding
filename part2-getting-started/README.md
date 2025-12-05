@@ -1,12 +1,19 @@
-# Part 2: Getting Started (1 hour)
+# Part 2: Getting Started
 
-## Hello World MCP Server (~40 mins)
+## Hello World MCP Server
 
+Build your first MCP server - a simple date/time tool.
+
+| Guide | Description |
+| --- | --- |
+| [DateTime Server](mcp-datetime/README.md) | Your first MCP server using FastMCP - returns local date and time |
+
+**What you'll learn:**
 - FastMCP setup and basics
-- Date/time server implementation
+- Defining tools with `@mcp.tool` decorator
 - Testing and integration with Claude Code
 
-## Tour of Useful MCP Servers (~20 mins)
+## Tour of Useful MCP Servers
 
 
 | MCP server | Description | Guide |
