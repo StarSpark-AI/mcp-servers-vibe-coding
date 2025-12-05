@@ -42,10 +42,30 @@ codex mcp add workshop-postgres \
 ```
 Confirm with `codex mcp list`. Inside the Codex TUI, `/mcp` toggles the server per session.
 
+## Alternative: Project-local Configuration
+
+Instead of global CLI configuration, you can add the PostgreSQL server to your project's `.mcp.json` file:
+
+```json
+{
+  "mcpServers": {
+    "workshop-postgres": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-postgres", "postgresql://your_username:YOUR_STRONG_PASSWORD@localhost:5432/mcp_workshop"]
+    }
+  }
+}
+```
+
+Replace `your_username` and `YOUR_STRONG_PASSWORD` with your actual PostgreSQL credentials from Part 0.
+
+Claude Code automatically detects this file when launched from the project folder.
+
 ## Verification Prompt
 1. Launch Claude (or Codex) with the server enabled.
 2. Ask:
-   > Use the workshop-postgres MCP server to run `SELECT id, title, status FROM workshop_tasks ORDER BY id;` and summarize how many tasks are in each status.
+   > Use the workshop-postgres MCP server to run `SELECT id, title, status, task_order FROM workshop_tasks ORDER BY task_order;` and summarize how many tasks are in each status.
 3. A successful response echoes the two seeded rows (`Review MCP docs`, `Add Codex server`) and reports the counts, e.g., *"2 tasks total: 1 in_progress, 1 todo"*.
 
 ## Troubleshooting

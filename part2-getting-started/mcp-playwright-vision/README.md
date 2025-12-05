@@ -12,6 +12,7 @@ Playwright Vision (https://github.com/davidkim9/playwright-vision-mcp) gives Cod
 ## Installation
 ```bash
 npm install -g playwright-vision-mcp
+npm install @playwright/test   # may be needed on your system to install playwright with dependencies                                           ║
 # Verify binaries are on PATH
 playwright-vision-mcp --help
 
@@ -50,6 +51,31 @@ codex mcp add playwright-vision \
 ```
 Run `codex mcp list` to confirm registration. You can further tweak `~/.codex/config.toml` if you need per-project overrides.
 > Containers/WSL users: switch to `--env PLAYWRIGHT_HEADLESS=true` to prevent Playwright from looking for a display server.
+
+## Alternative: Project-local Configuration
+
+Instead of global CLI configuration, you can add Playwright Vision to your project's `.mcp.json` file:
+
+```json
+{
+  "mcpServers": {
+    "playwright-vision": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "playwright-vision-mcp"],
+      "env": {
+        "PLAYWRIGHT_HEADLESS": "false",
+        "BROWSER_TYPE": "chromium",
+        "SCREENSHOT_DIR": "/path/to/your/playwright-shots"
+      }
+    }
+  }
+}
+```
+
+Replace `/path/to/your/playwright-shots` with your actual screenshot directory (e.g., `~/playwright-shots`).
+
+Claude Code automatically detects this file when launched from the project folder.
 
 ## Verification Prompt
 1. Launch `claude` (or `codex`) inside your repo.
