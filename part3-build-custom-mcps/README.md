@@ -18,7 +18,12 @@ Build an MCP server with PostgreSQL integration for CRUD operations.
 
 Build an MCP server that integrates with external APIs for image generation.
 
+| Guide | Description |
+| --- | --- |
+| [NanoBanana](mcp-nanobanana/README.md) | Image generation using Google Gemini API |
+
 **What you'll learn:**
-- External API integration
+- External API integration with Google Gemini
 - Async operations and file handling
-- Visual workflow enhancement
+- Structured prompt building
+- Visual workflow enhancement for the Art Gallery project
