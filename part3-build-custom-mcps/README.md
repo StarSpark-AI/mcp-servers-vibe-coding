@@ -1,13 +1,24 @@
-# Part 3: Build Custom MCPs (1.5 hours)
+# Part 3: Build Custom MCPs
 
-## Planning MCP Server (~45 mins)
+## Task Tracker MCP Server
 
-- State management and CRUD operations
-- Data persistence patterns
-- Practical task tracking
+Build an MCP server with PostgreSQL integration for CRUD operations.
 
-## NanoBanana/Image Generation MCP (~45 mins)
+| Guide | Description |
+| --- | --- |
+| [Task Tracker](mcp-task-tracker/README.md) | PostgreSQL-backed task management with CRUD operations |
 
+**What you'll learn:**
+- Connecting to PostgreSQL from MCP servers
+- State management with a real database
+- CRUD operations (Create, Read, Update)
+- Environment variables for credentials
+
+## NanoBanana/Image Generation MCP
+
+Build an MCP server that integrates with external APIs for image generation.
+
+**What you'll learn:**
 - External API integration
 - Async operations and file handling
 - Visual workflow enhancement

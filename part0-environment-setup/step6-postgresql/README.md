@@ -72,13 +72,14 @@ CREATE TABLE IF NOT EXISTS workshop_tasks (
 	id SERIAL PRIMARY KEY,
 	project_name TEXT NOT NULL,
 	title TEXT NOT NULL,
-	status TEXT NOT NULL
+	status TEXT NOT NULL,
+	task_order INTEGER
 );
-INSERT INTO workshop_tasks (project_name, title, status)
-VALUES ('MCP Workshop', 'Review MCP docs', 'in_progress'),
-	   ('MCP Workshop', 'Add Codex server', 'todo')
+INSERT INTO workshop_tasks (project_name, title, status, task_order)
+VALUES ('MCP Workshop', 'Review MCP docs', 'in_progress', 1),
+	   ('MCP Workshop', 'Add Codex server', 'todo', 2)
 ON CONFLICT DO NOTHING;
-SELECT * FROM workshop_tasks;
+SELECT * FROM workshop_tasks ORDER BY task_order;
 SQL
 ```
 
