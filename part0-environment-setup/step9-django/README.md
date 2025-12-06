@@ -21,14 +21,17 @@ pip install djangorestframework
 
 ```bash
 # Install common Django utilities
-pip install django-environ     # Environment variables
-pip install django-cors-headers # CORS handling
-pip install django-extensions  # Development extensions
+# Environment variables
+pip install django-environ
+# CORS handling     
+pip install django-cors-headers
+# Development extensions 
+pip install django-extensions  
 ```
 
 ## PostgreSQL Integration
 
-Update your Django settings to use PostgreSQL:
+Update your Django settings in your project's settings.py file to use PostgreSQL:
 
 ```python
 DATABASES = {
