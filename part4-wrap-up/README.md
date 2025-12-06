@@ -150,6 +150,9 @@ All MCP servers built in this workshop:
 - [Model Context Protocol](https://modelcontextprotocol.io/)
 - [FastMCP GitHub](https://github.com/jlowin/fastmcp)
 
+**Community MCP Servers:**
+- [Official MCP Servers Collection](https://github.com/modelcontextprotocol/servers) - Curated list of MCP servers for filesystems, databases, GitHub, Slack, Google Drive, and many more
+
 **AI Coding Assistants:**
 - [Claude Code](https://claude.ai/code)
 - [Cursor](https://cursor.sh/)
