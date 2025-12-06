@@ -33,6 +33,7 @@ Learned the Document Driven Development workflow for AI-assisted coding.
 
 **Key Concepts:**
 - Create `documents/` folder with architecture and coding standards
+- Write document templates for different types of work (enhancements, features, bug fixes)
 - AI uses these documents as context for implementation
 - Reduces hallucinations and improves code consistency
 
@@ -40,7 +41,7 @@ Learned the Document Driven Development workflow for AI-assisted coding.
 
 ### Part 2: Getting Started with MCPs
 
-Built your first MCP server and explored existing MCP integrations.
+Explored the world of existing MCP servers and built your first custom MCP server.
 
 | MCP Server | Description |
 |------------|-------------|
